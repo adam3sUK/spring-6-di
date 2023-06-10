@@ -7,11 +7,10 @@ import guru.springframework.spring6di.services.GreetingService;
 
 @Controller
 public class SetterInjectedController {
-
-  @Autowired
+  
   private GreetingService greetingService;
 
-
+  @Autowired
   public void setGreetingService(GreetingService greetingService) {
     this.greetingService = greetingService;
   }
